@@ -33,13 +33,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border:10px solid slategrey;
   min-height:100vh;
-  /* flex-wrap:wrap; */
-  flex-direction: column;
+  /* flex-wrap:wrap-reverse; */
+  flex-wrap:wrap;
+  /* flex-direction: column; */
   /* flex-direction: column-reverse; */
   /* flex-direction: row-reverse; */
-
+  flex-direction: row; 
 }
 
 .box {
-  width:33.3333333%;
+  width: calc(33.3333333%-20px);
+  padding: 10px;
+  border: 10px solid dodgerblue; 
 }
